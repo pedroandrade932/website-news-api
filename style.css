@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#noticias{
+    width: 100%;
+    padding: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.news{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1 10 200px;
+}
+
+.imagem{
+    height: 150px;
+    width: 100%;
+    margin: 10px;
+}
+
+
