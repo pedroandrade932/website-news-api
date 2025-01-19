@@ -4,12 +4,13 @@ function search(){
     let pesquisa = window.document.querySelector("#search").value
     let mostrarNoticias = window.document.getElementById('noticias')
 
+    // Capturar conteudo da url (NEWS API)
     let url = `https://newsapi.org/v2/everything?q=${pesquisa}&language=pt&pageSize=30&sortBy=publishedAt&apiKey=b42cefeaf183405d95940739d2eaaca6`
     
     // Apagar lixo residual da section
     mostrarNoticias.innerHTML = ""
 
-    // 
+    // Tratar o .json retornado
     fetch(url).then(resp =>{
         return resp.json()
     }).then(dados=>{
