@@ -20,7 +20,7 @@ function search(){
                 noticias.map(function(numero){
                 let article = document.createElement('article')
                 article.className = "news"
-                if (numero.title != "[Removed]"){
+                if (numero.title != "[Removed]" && numero.title != null){
                     article.innerHTML = `
                                     <img class='imagem' src=${numero.urlToImage}>
                                     <h2> ${numero.title}</h2>
