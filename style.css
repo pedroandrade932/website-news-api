@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pesquisa {
+    max-width: 500px;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+}
+
+#pesquisa #search {
+    padding: 5px;
+    width: 300px;
+}
+
+#noticias{
+    width: 100%;
+    padding: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.news{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem{
+    height: 150px;
+    width: 100%;
+    margin: 10px;
+}
+
+
