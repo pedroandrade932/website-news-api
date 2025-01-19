@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Página de pesquisa</h1>
-    <div id="pesquisa">
-        <input type="text" name="search" id="search">
-        <button onclick="search()">Pesquisar</button>
-    </div>
-    <div id="noticias"></div>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Página de pesquisa</h1>
+    </header>
+    <!-- Principal da página -->
+    <main>
+
+        <!-- div da barra de pesquisa -->
+        <div id="pesquisa">
+            <input type="text" name="search" id="search">
+            <button onclick="search()">Pesquisar</button>
+        </div>
+
+        <!-- Seção dos resultados -->
+        <!--(tudo dentro dessa seção é apagado a cada pesquisa e todo inicio de carregamento).
+            Dentro dessa section, cada noticia virá em um article com classe "artigo".
+            Dentro de cada artigo, possue uma tag <img class="imagem">, um <h2>, dois <p> 
+            (um p para descrição, outro para o link externo com classe "link") e um <a> para
+            realizar a linkagem. -->
+        <section id="noticias"></section>
+    </main>
     <script src="script_search.js"></script>
 </body>
 </html>

@@ -1,9 +1,16 @@
-*{
+/* Charset padrão */
+@charset "UTF-8";
+
+/* Definições globais */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* Para a barra de pesquisa */
+/* Div de pesquisa (barra e botão) */
 #pesquisa {
     max-width: 500px;
     padding: 30px;
@@ -11,11 +18,15 @@
     display: flex;
 }
 
+/* Barra de pesquisa */
 #pesquisa #search {
     padding: 5px;
     width: 300px;
 }
 
+
+/* Para as noticias em si. */
+/* Para a section noticias */
 #noticias{
     width: 100%;
     padding: 200px;
@@ -23,16 +34,17 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+/* Para cada noticia encontrada */
 .news{
     height: auto;
     display: flex;
     flex-direction: row;
 }
 
+/* Para cada imagem de cada notícia */
 .imagem{
     height: 150px;
     width: 100%;
     margin: 10px;
 }
-
-
