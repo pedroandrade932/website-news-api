@@ -14,13 +14,18 @@ function search(){
     fetch(url).then(resp =>{
         return resp.json()
     }).then(dados=>{
-        console.log(dados)
+        // pega todas as noticias retornadas
         let noticias = (dados.articles)
+
+        // Se o resultado das pesquisa for maior que 0, continue
         if (dados.totalResults > 0){
+                // trata e organiza as noticias
                 noticias.map(function(numero){
                 let article = document.createElement('article')
                 article.className = "news"
+                // Se o titulo (noticia) não for removido e não for nulo, continue
                 if (numero.title != "[Removed]" && numero.title != null){
+                    // mostra a noticia (já dentro do article)
                     article.innerHTML = `
                                     <img class='imagem' src=${numero.urlToImage}>
                                     <h2> ${numero.title}</h2>
@@ -30,8 +35,11 @@ function search(){
                     mostrarNoticias.appendChild(article)
                 }
             })
+        // Caso o número de noticias for 0, continue
         }else{
             mostrarNoticias.innerHTML = "<h2>Nenhum Resultado para a busca :(</h2>"
         }
     })
 }
+
+// Fim do script
