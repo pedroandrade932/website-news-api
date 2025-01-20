@@ -1,0 +1,149 @@
+/* Estilo Geral */
+body{
+    font-family: "Montserrat", serif;
+    font-style: normal;
+}
+
+/* Estilizando o header */
+
+header{
+    width: 100vw;
+    background-color: #760f0f;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+header .btn-pesquisa{
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+}
+
+header .btn-pesquisa input{
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header .btn-pesquisa i{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Estilizando a main */
+
+main{
+    background-color: rgb(187, 187, 187);
+    width: 100vw;
+}
+
+main h2{
+    font-size: 30px;
+}
+
+main span{
+    color: #760f0f;
+}
+
+main section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+    gap: 100px;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+}
+
+main section.sobre-portal{
+    background-color: #ffffff;
+}
+
+main section .conteudo-section p{
+    margin-bottom: 20px;
+}
+
+section.quem-somos .conteudo-section h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.quem-somos .conteudo-section .equipe{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+section.quem-somos .conteudo-section .equipe .membro-equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section.quem-somos .conteudo-section .equipe .membro-equipe .retrato{
+    background-color: #760f0f;
+    border-radius: 100%;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+section.nosso-proposito .conteudo-section{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+
+section.nosso-proposito .conteudo-section .ilustracao{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section.nosso-proposito .conteudo-section .ilustracao img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+section.tecnologias-usadas .conteudo-section .tecnologias{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+section.tecnologias-usadas .conteudo-section img{
+    width: 100px;
+}
+
+/* Estilizando o footer */
+
+footer{
+    width: 100vw;
+    background-color: #760f0f;
+    padding: 40px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+
+}
+
+footer img{
+    width: 150px;
+}
