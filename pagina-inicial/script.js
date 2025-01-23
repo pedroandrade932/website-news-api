@@ -1,4 +1,4 @@
-let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=b42cefeaf183405d95940739d2eaaca6';
+let url = 'https://newsapi.org/v2/everything?q=pesquisa&language=pt&sortBy=publishedAt&apiKey=b42cefeaf183405d95940739d2eaaca6';
 mostrarNoticias = document.getElementById('noticias');
 
 fetch(url).then(resp =>{
