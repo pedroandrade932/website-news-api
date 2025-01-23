@@ -1,6 +1,11 @@
+function obterValorConsulta(parametro) {
+    const urlParametro = new URLSearchParams(window.location.search);
+    return urlParametro.get(parametro);
+}
+
 // Função responsável pela pesquisa dinamica
 function search(){
-    // Captura dos componentes importates
+    // Captura dos componentes importantes
     let pesquisa = window.document.querySelector("#search").value
     let mostrarNoticias = window.document.getElementById('noticias')
 
@@ -42,4 +47,17 @@ function search(){
     })
 }
 
-// Fim do script
+// Capturar o termo da URL automaticamente ao carregar a página
+document.addEventListener("DOMContentLoaded", () => {
+    let termo = obterValorConsulta("query"); // Recupera o termo da URL
+    if (termo) {
+        document.querySelector("#search").value = termo; // Preenche o campo de pesquisa
+        search(termo); // Faz a busca automaticamente
+    }
+});
+
+// Adicionar evento ao botão de pesquisa para novas buscas
+document.querySelector("#pesquisa botao").addEventListener("click", () => {
+    let termo = document.querySelector("#search").value.trim();
+    search(termo);
+});
