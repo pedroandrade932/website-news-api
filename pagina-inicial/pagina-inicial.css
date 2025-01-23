@@ -1,0 +1,127 @@
+/* Estilo Geral */
+*{
+    font-family: "Montserrat", serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o header */
+header{
+    width: 100vw;
+    background-color: #760f0f;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+header .btn-pesquisa{
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+}
+
+header .btn-pesquisa input{
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header .btn-pesquisa i{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* Estilizando o link */
+.link {
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Contêiner geral para as notícias */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 30px;
+    gap: 20px; /* Usar gap para espaço entre os itens */
+    align-content: flex-start;
+}
+
+
+/* Estilizando o contêiner de notícias */
+#noticias {
+    width: 100%;
+    display: flex;    
+    gap: 20px;  /* Espaço entre as notícias */
+    flex-wrap: wrap; /* Permite que as notícias se empilhem em várias linhas, se necessário */
+}
+
+/* Estilo para cada notícia */
+.news {
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px; /* Flexível, mas com um tamanho mínimo */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para as notícias */
+}
+
+/* Estilo para a imagem */
+.imagem {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px; /* Bordas arredondadas na imagem */
+}
+
+/* Estilo para o conteúdo da notícia (Título e Descrição) */
+.news .content {
+    margin-top: 10px;
+}
+
+/* Estilizando o título h1 */
+.h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.news h2 {
+    color: darkred;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news p {
+    font-size: 14px;
+    color: black;
+    line-height: 1.5;
+}
+
+/* Estilizando o footer */
+footer{
+    width: 100vw;
+    background-color: #760f0f;
+    padding: 40px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+
+}
+
+footer img{
+    width: 150px;
+}
