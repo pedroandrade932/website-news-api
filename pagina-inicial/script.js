@@ -23,18 +23,22 @@ fetch(url).then(resp =>{
                             <p class="link"> Leia mais </p></a>
                             `;
             mostrarNoticias.appendChild(div);
-        })
-
-        let btnPesquisa = document.querySelector('.btn-pesquisa input');
-
-        // Evento para capturar o termo e redirecionar
-        btnPesquisa.addEventListener('keydown', function (event) {
-            if (event.key === 'Enter') {
-                let termo = btnPesquisa.value.trim();
-                if (termo) {
-                    // Redireciona para a página de pesquisa 
-                    window.location.href = `/search-news.html?query=${encodeURIComponent(termo)}`;
-                }
-            }
         });
+
+            // Capturar o input e o botão de pesquisa
+            const campoPesquisa = document.querySelector(".btn-pesquisa input"); 
+            const botao = document.querySelector("#botao-pesquisa"); 
+        
+            // Evento de clique no botão de pesquisa
+            botao.addEventListener("click", () => {
+                const termo = campoPesquisa.value.trim(); // Captura o valor digitado
+                if (termo) {
+                    // Redireciona para a página de pesquisa, passando o termo como parâmetro
+                    window.location.href = `/pagina-pesquisa/search-news.html?query=${encodeURIComponent(termo)}`;
+                } else {
+                    alert("Por favor, insira um termo para pesquisar.");
+                }
+            });
+        
+        // Evento para capturar o termo e redirecionar
 });

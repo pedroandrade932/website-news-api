@@ -48,13 +48,36 @@ header .btn-pesquisa i{
     font-weight: 600;
 }
 
+.itens {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+}
+
+.nav-item {
+    margin-right: 25px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Sarala', sans-serif;
+}
+
+.nav-item a:hover{
+    color: #df9f9f;
+}
 
 /* Barra de pesquisa */
 #pesquisa #search {
     padding: 5px;
     width: 300px;
 }
-
 
 /* Para as noticias em si. */
 /* Para a section noticias */
