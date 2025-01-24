@@ -40,5 +40,5 @@ fetch(url).then(resp =>{
                 }
             });
         
-        // Evento para capturar o termo e redirecionar
+        // Evento para capturar o termo e redireciona
 });
