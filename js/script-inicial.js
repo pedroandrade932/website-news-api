@@ -34,7 +34,7 @@ fetch(url).then(resp =>{
                 const termo = campoPesquisa.value.trim(); // Captura o valor digitado
                 if (termo) {
                     // Redireciona para a página de pesquisa, passando o termo como parâmetro
-                    window.location.href = `/pagina-pesquisa/search-news.html?query=${encodeURIComponent(termo)}`;
+                    window.location.href = `search-news.html?query=${encodeURIComponent(termo)}`;
                 } else {
                     alert("Por favor, insira um termo para pesquisar.");
                 }
