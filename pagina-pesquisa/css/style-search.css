@@ -1,0 +1,104 @@
+/* Charset padrão */
+@charset "UTF-8";
+
+/* Estilização geral */
+
+body{
+    font-family: "Montserrat", serif;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    gap: 20px; /* Usar gap para espaço entre os itens */
+}
+
+/* estilização header */
+
+header{
+    background-color: #760f0f;
+    padding: 40px;
+}
+
+header .cont-header{
+    justify-content: space-between;
+}
+
+header .btn-pesquisa{
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+}
+
+header .btn-pesquisa input{
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header .btn-pesquisa i{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* Barra de pesquisa */
+#pesquisa #search {
+    padding: 5px;
+    width: 300px;
+}
+
+
+/* Para as noticias em si. */
+/* Para a section noticias */
+#noticias{
+    width: 100%;
+    padding: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#noticias .imagem{
+    height: 150px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Para cada noticia encontrada */
+.news{
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px; /* Flexível, mas com um tamanho mínimo */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para as notícias */
+}
+
+.news h2 {
+    color: darkred;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.news a{
+    text-decoration: none;
+    text-align: center;
+    color: #760f0f;
+}
