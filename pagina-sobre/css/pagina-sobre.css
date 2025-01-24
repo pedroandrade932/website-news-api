@@ -16,27 +16,6 @@ header{
     justify-content: space-between;
 }
 
-header .btn-pesquisa{
-    padding: 8px;
-    border: none;
-    border-radius: 15px;
-}
-
-header .btn-pesquisa input{
-    border: none;
-    background-color: transparent;
-    align-items: center;
-    text-align: justify;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-header .btn-pesquisa i{
-    font-size: 15px;
-    font-weight: 600;
-}
-
 .itens {
     display: flex;
     list-style-type: none;
@@ -53,7 +32,7 @@ header .btn-pesquisa i{
 
 .nav-item a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 19px;
     color: rgb(255, 255, 255);
     font-family: 'Sarala', sans-serif;
 }
