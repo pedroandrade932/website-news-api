@@ -71,7 +71,8 @@ main section.sobre-portal{
 }
 
 main section .conteudo-section p{
-    margin-bottom: 20px;
+    font-size: 20px;
+    width: 50vw;
 }
 
 section.quem-somos .conteudo-section h3{
@@ -101,6 +102,31 @@ section.quem-somos .conteudo-section .equipe .membro-equipe .retrato{
     height: 120px;
     width: 120px;
     margin-bottom: 10px;
+}
+
+section.quem-somos .conteudo-section .equipe .membro-equipe .img-pedro{
+    background-image: url("../image/pedro.holanda.png");
+    background-size: cover;
+    background-position: center;
+
+}
+section.quem-somos .conteudo-section .equipe .membro-equipe .img-beatriz{
+    background-image: url("../image/beatriz.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+section.quem-somos .conteudo-section .equipe .membro-equipe .img-joao{
+    background-image: url("../image/Victor\ Batista.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+section.quem-somos .conteudo-section .equipe .membro-equipe .img-yohanne{
+    background-image: url("../image/yohanne.png");
+    background-size: cover;
+    background-position: center;
+
 }
 
 section.nosso-proposito .conteudo-section{
